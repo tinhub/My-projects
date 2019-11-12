@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    
+    height: 100%;
+    font-size: 10px;
+    background-image: url(djsheen.JPG);
+    background-size: cover ;
+    background-attachment: fixed;
+
+}
+
+#container {
+    min-height: 200%;
+}
+#main {
+    overflow: auto;
+    padding-bottom: 10px;
+}
+
+
+header h1{
+    color:greenyellow;
+    font-size: 50px;
+    text-align: center;
+}
+.box{
+    position: sticky;
+    top: 0.25rem;
+}
+
+nav {
+    
+    height: 50px;
+    flex: 100%;
+    display: flex;
+    padding: 0.5em;
+    position: sticky;
+    top:0;
+    
+    
+    
+    
+    
+}
+
+
+
+nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  
+    
+}
+
+nav a,
+nav span {
+    display: inline-block;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 1.7;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:greenyellow;
+}
+
+#footer {
+    align-content: center;
+    background-color: blue;
+    position: relative;
+    height: relative;
+    margin-top: -100px;
+    clear: both;
+    color:greenyellow;
+}
