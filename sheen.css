@@ -1,78 +1,78 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-html,body {
-    
-    height: 100%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     background-image: url(djsheen.JPG);
-    background-size: cover ;
-    background-attachment: fixed;
-
+    background-size: contain ;
+    background-attachment: scroll;
 }
-
-#container {
-    min-height: 200%;
-}
-#main {
-    overflow: auto;
-    padding-bottom: 10px;
-}
-
-
-header h1{
-    color:greenyellow;
-    font-size: 50px;
-    text-align: center;
-}
-.box{
-    position: sticky;
-    top: 0.25rem;
-}
-
-nav {
+header{
+    padding: 10px ;
+    margin-bottom: 10px;
     
-    height: 50px;
-    flex: 100%;
+    color: rgb(45, 243, 38);
+    font-size: 100px;
+    text-align: center;
+
+}
+header h1{
+font-size: 30px;
+margin-bottom: 30px;
+}
+header p{
+    font-size: 20px;
+}
+main {
+    
+    margin: 0 auto;
+    padding-bottom: 30px 20px;
+    min-height: calc(100vh - 107px - 62px);
+    color: rgb(96, 187, 182);
+}
+
+#nav  {
+    text-align: center;
     display: flex;
-    padding: 0.5em;
+    background-image: url(nav2.jpg);
+    background-size: cover;
+    padding: 5px;
+    display: grid;
+    grid-gap: 2px;
     position: sticky;
     top:0;
-    
-    
-    
-    
+}
+nav ul {
+    display: grid;
+    grid-gap: 2px;
+    padding: 10px;
+    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
     
 }
-
-
-
-nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
-  
-    
-}
-
-nav a,
-nav span {
-    display: inline-block;
-    font-size: 2rem;
-    height: 3rem;
-    line-height: 1.7;
-    text-transform: uppercase;
+nav a {
+    color: #fff;
     text-decoration: none;
-    color:greenyellow;
-}
+    padding: 0.5em 1em;
+    color:rgb(15, 214, 138);
+    display: inline-block;
+    font-size: 30px;
+    height: 3rem;
 
-#footer {
-    align-content: center;
+}
+footer {
+    text-align: center;
     background-color: blue;
-    position: relative;
-    height: relative;
-    margin-top: -100px;
-    clear: both;
     color:greenyellow;
+    position: bottom;
+    height: relative;
+    margin-bottom: 50px;
+    padding: 20px;
+    
 }
